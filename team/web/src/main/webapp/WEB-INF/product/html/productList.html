@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/01debed61a.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  
+  <style>
+    .search:focus {
+      outline: none;
+    }
+
+    .a_link {
+      color: black;
+      text-decoration-line: none;
+    }
+
+    .hearder_link {
+      color: black;
+      text-decoration-line: none;
+    }
+
+    .hearder_label {
+      cursor: pointer;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="main">
+    <div class="container">
+
+      <div class="logo row p-1">
+
+        <div class="col-4 p-2 m-auto">
+          <a href="#">
+          <img src="https://image.a-rt.com/art/system/site/202207/1658299296317.png">
+          </a>
+        </div>
+
+        <div class="col-4 mt-4">
+         <div class="border-2 border-bottom border-secondary row d-flex justify-content-center">
+          <div class="col-10">
+            <input type="search" class="search border border-0 w-100 h-100" id="search" placeholder="검색어를 입력하세요.">
+          </div>
+          <div class="col-2 d-flex justify-content-end">
+            <div class="d-flex m-2">
+             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
+             <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+             </svg>
+            </div>
+            <div class="d-flex m-2">
+             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+             </svg>
+            </div>
+          </div>
+         </div>
+        </div>
+
+        <div class="col-4">
+          <div class="m-auto d-flex justify-content-between w-25">
+
+          <a href="#" class="hearder_link">
+          <div class="row p-3 d-block align-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+              <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+              </svg>
+              <label class="hearder_label mt-1 text-center" style="font-size: 0.8em;">LOGIN</label>
+          </div>
+          </a>
+
+          <a href="#" class="hearder_link">
+          <div class="row p-3 d-block align-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+              </svg>
+              <label class="hearder_label mt-1 text-center" style="font-size: 0.8em;">JOIN</label>
+          </div>
+          </a>
+
+          <a href="#" class="hearder_link">
+          <div class="row p-3 d-block align-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+              </svg>
+              <label class="hearder_label mt-1 text-center" style="font-size: 0.8em;">CART</label>
+          </div>
+          </a>
+
+          <a href="#" class="hearder_link">
+          <div class="row p-3 d-block align-content-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-shop-window" viewBox="0 0 16 16">
+              <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z"/>
+              </svg>
+              <label class="hearder_label mt-1 text-center" style="font-size: 0.8em;">STORE</label>
+          </div>
+          </a>
+          
+          </div>
+        </div>
+
+     </div>  <!-- logo -->
+    </div>  <!-- container -->
+     
+      <nav class="navbar navbar-expand-lg p-1" style="background-color: rgb(240, 36, 36);">
+        <div class="container-fluid">
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="col-2"></div>
+            <ul class="navbar-nav me-auto col-4 justify-content-start">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: yellow; margin-right: 1em;">BRAND</a>
+              </li>
+              <li class="nav-item P-2">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white; margin-right: 1em;">MEN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white; margin-right: 1em;">WOMEN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white; margin-right: 1em;">KIDS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white;">SALE</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-auto col-4 justify-content-end">
+              <li class="nav-item P-2">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white;"><strong>기획전</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white; margin-left: 0.8em;"><strong>이벤트/쿠폰</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white; margin-left: 0.8em;"><strong>고객센터</strong></a>
+              </li>
+            </ul>
+            <div class="col-2"></div>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://image.a-rt.com//art/display/gs/contents/202306/20230602100214370.jpg?fitting=large|1920:600" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://image.a-rt.com//art/display/gs/contents/202306/20230616165455717.jpg?fitting=large|1920:600" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://image.a-rt.com//art/display/gs/contents/202306/20230619181553966.jpg?fitting=large|1920:600" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://image.a-rt.com//art/display/gs/contents/202306/20230616141208997.jpg?fitting=large|1920:600" class="d-block w-100" alt="...">
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+      <div class="mt-5">
+        <h2 class="d-flex justify-content-center"><strong>NEW ARRIVALS</strong></h2>
+        <a href="#" class="d-flex justify-content-end link-underline link-underline-opacity-0" style="margin-right: 17em; color: rgb(112, 112, 112);"><strong>MORE ></strong></a>
+      </div>  
+      
+      
+
+      <div id="carouselExample" class="carousel carousel-dark slide">
+        <div class="carousel-inner mb-5">
+
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <a href="#" class="a_link">
+              <div class="m-1">
+                <img src="https://image.a-rt.com/art/product/2023/05/42971_1685427697796.jpg?shrink=224:224" class="" alt="...">
+                <p class="m-2"><strong>크록스</strong></p>
+                <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">오프 코트 클로그 T</p>
+                <p></p>
+                <h5 class="m-2"><strong>49,900원</strong></h5>
+              </div>
+              </a>
+
+              <a href="#" class="a_link">
+              <div class="m-1">
+                <img src="https://image.a-rt.com/art/product/2023/05/42971_1685427697796.jpg?shrink=224:224" class="" alt="...">
+                <p class="m-2"><strong>크록스</strong></p>
+                <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">오프 코트 클로그 T</p>
+                <p></p>
+                <h5 class="m-2"><strong>49,900원</strong></h5>
+              </div>
+              </a>
+              
+              <a href="#" class="a_link">
+              <div class="m-1">
+                <img src="https://image.a-rt.com/art/product/2023/05/42971_1685427697796.jpg?shrink=224:224" class="" alt="...">
+                <p class="m-2"><strong>크록스</strong></p>
+                <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">오프 코트 클로그 T</p>
+                <p></p>
+                <h5 class="m-2"><strong>49,900원</strong></h5>
+              </div>
+              </a>
+
+              <a href="#" class="a_link">
+              <div class="m-1">
+                <img src="https://image.a-rt.com/art/product/2023/05/42971_1685427697796.jpg?shrink=224:224" class="" alt="...">
+                <p class="m-2"><strong>크록스</strong></p>
+                <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">오프 코트 클로그 T</p>
+                <p></p>
+                <h5 class="m-2"><strong>49,900원</strong></h5>
+              </div>
+              </a>
+
+              <a href="#" class="a_link">
+              <div class="m-1">
+                <img src="https://image.a-rt.com/art/product/2023/05/42971_1685427697796.jpg?shrink=224:224" class="" alt="...">
+                <p class="m-2"><strong>크록스</strong></p>
+                <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">오프 코트 클로그 T</p>
+                <p></p>
+                <h5 class="m-2"><strong>49,900원</strong></h5>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <a href="#" class="a_link"></a>
+              <div class="m-1">
+                <img src="https://image.a-rt.com/art/product/2023/05/32266_1685427490946.jpg?shrink=224:224" class="" alt="...">
+                <p class="m-2"><strong>크록스</strong></p>
+                <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">오프 코트 클로그 T</p>
+                <p></p>
+                <h5 class="m-2"><strong>49,900원</strong></h5>
+              </div>
+
+              <a href="#" class="a_link">
+              <div class="m-1">
+                <img src="https://image.a-rt.com/art/product/2023/05/32266_1685427490946.jpg?shrink=224:224" class="" alt="...">
+                <p class="m-2"><strong>크록스</strong></p>
+                <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">오프 코트 클로그 T</p>
+                <p></p>
+                <h5 class="m-2"><strong>49,900원</strong></h5>
+              </div>
+              </a>
+
+              <a href="#" class="a_link">
+              <div class="m-1">
+                <img src="https://image.a-rt.com/art/product/2023/05/32266_1685427490946.jpg?shrink=224:224" class="" alt="...">
+                <p class="m-2"><strong>크록스</strong></p>
+                <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">오프 코트 클로그 T</p>
+                <p></p>
+                <h5 class="m-2"><strong>49,900원</strong></h5>
+              </div>
+              </a>
+
+              <a href="#" class="a_link">
+              <div class="m-1">
+                <img src="https://image.a-rt.com/art/product/2023/05/32266_1685427490946.jpg?shrink=224:224" class="" alt="...">
+                <p class="m-2"><strong>크록스</strong></p>
+                <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">오프 코트 클로그 T</p>
+                <p></p>
+                <h5 class="m-2"><strong>49,900원</strong></h5>
+              </div>
+              </a>
+
+              <a href="#" class="a_link">
+              <div class="m-1">
+                <img src="https://image.a-rt.com/art/product/2023/05/32266_1685427490946.jpg?shrink=224:224" class="" alt="...">
+                <p class="m-2"><strong>크록스</strong></p>
+                <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">오프 코트 클로그 T</p>
+                <p></p>
+                <h5 class="m-2"><strong>49,900원</strong></h5>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <a href="#" class="a_link">
+              <div class="m-1">
+                <img src="https://image.a-rt.com/art/product/2023/05/01114_1685427598383.jpg?shrink=224:224" class="" alt="...">
+                <p class="m-2"><strong>크록스</strong></p>
+                <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">오프 코트 클로그 T</p>
+                <p></p>
+                <h5 class="m-2"><strong>49,900원</strong></h5>
+              </div>
+              </a>
+
+              <a href="#" class="a_link">
+              <div class="m-1">
+                <img src="https://image.a-rt.com/art/product/2023/05/01114_1685427598383.jpg?shrink=224:224" class="" alt="...">
+                <p class="m-2"><strong>크록스</strong></p>
+                <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">오프 코트 클로그 T</p>
+                <p></p>
+                <h5 class="m-2"><strong>49,900원</strong></h5>
+              </div>
+              </a>
+
+              <a href="#" class="a_link">
+              <div class="m-1">
+                <img src="https://image.a-rt.com/art/product/2023/05/01114_1685427598383.jpg?shrink=224:224" class="" alt="...">
+                <p class="m-2"><strong>크록스</strong></p>
+                <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">오프 코트 클로그 T</p>
+                <p></p>
+                <h5 class="m-2"><strong>49,900원</strong></h5>
+              </div>
+              </a>
+
+              <a href="#" class="a_link">
+              <div class="m-1">
+                <img src="https://image.a-rt.com/art/product/2023/05/01114_1685427598383.jpg?shrink=224:224" class="" alt="...">
+                <p class="m-2"><strong>크록스</strong></p>
+                <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">오프 코트 클로그 T</p>
+                <p></p>
+                <h5 class="m-2"><strong>49,900원</strong></h5>
+              </div>
+              </a>
+
+              <a href="#" class="a_link">
+              <div class="m-1">
+                <img src="https://image.a-rt.com/art/product/2023/05/01114_1685427598383.jpg?shrink=224:224" class="" alt="...">
+                <p class="m-2"><strong>크록스</strong></p>
+                <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">오프 코트 클로그 T</p>
+                <p></p>
+                <h5 class="m-2"><strong>49,900원</strong></h5>
+              </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+
+
+
+
+
+      <!-- MD’S PICK -->
+
+      <div class="row">
+        <div class="col-2"></div>
+          <div class="col-8">
+            <div class="text-center mt-5"><h2><strong>MD’S PICK</strong></h2></div>
+
+            
+            <div class="d-flex justify-content-center mb-4" style="color: grey;">
+              <h6 class="m-3" style="cursor: pointer" onclick="crocsBtn()" id="crocsBtn"><strong>CROCS</strong></h6>
+              <h6 class="m-3" style="cursor: pointer" onclick="slideBtn()" id="slideBtn"><strong>SLIDE</strong></h6>
+              <h6 class="m-3" style="cursor: pointer" onclick="muleBtn()" id="muleBtn"><strong>MULE</strong></h6>
+              <h6 class="m-3" style="cursor: pointer" onclick="zaxyBtn()" id="zaxyBtn"><strong>ZAXY</strong></h6>
+            </div>
+
+            
+            <div class="mb-5" id="crocs_hidden">
+            <div class="d-flex justify-content-center">
+
+              <div class="m-1">
+                <a href="#" class="a_link">
+                  <img src="https://image.a-rt.com/art/product/2022/07/55977_1656926842456.jpg?shrink=590:590" class="w-100" alt="...">
+                  <p class="m-2"><strong>크록스</strong></p>
+                  <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">브루클린 로우 웨지 우먼스</p>
+                  <p></p>
+                  <h5 class="m-2"><strong>79,900원</strong></h5>
+                </a>
+              </div>
+
+              <div class="m-1">
+                <a href="#" class="a_link">
+                  <img src="https://image.a-rt.com/art/product/2023/04/79955_1682474653274.jpg?shrink=590:590" class="w-100" alt="...">
+                  <p class="m-2"><strong>크록스</strong></p>
+                  <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">브루클린 버클 로우 웨지</p>
+                  <p></p>
+                  <h5 class="m-2"><strong>67,900원</strong></h5>
+                </a>
+              </div>
+
+              <div class="m-1">
+                <a href="#" class="a_link">
+                  <img src="https://image.a-rt.com/art/product/2023/04/38652_1682429885210.jpg?shrink=590:590" class="w-100" alt="...">
+                  <p class="m-2"><strong>크록스</strong></p>
+                  <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">브루클린 버클 로우 웨지</p>
+                  <p></p>
+                  <h5 class="m-2"><strong>67,900원</strong></h5>
+                </a>
+              </div>
+
+              <div class="m-1">
+                <a href="#" class="a_link">
+                  <img src="https://image.a-rt.com/art/product/2023/04/80257_1682475316910.jpg?shrink=590:590" class="w-100" alt="...">
+                  <p class="m-2"><strong>크록스</strong></p>
+                  <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">브루클린 스트래피 로우 웨지</p>
+                  <p></p>
+                  <h5 class="m-2"><strong>84,900원</strong></h5>
+                </a>
+              </div>
+
+              <div class="m-1">
+                <a href="#" class="a_link">
+                  <img src="https://image.a-rt.com/art/product/2023/04/04420_1682430381568.jpg?shrink=590:590" class="w-100" alt="...">
+                  <p class="m-2"><strong>크록스</strong></p>
+                  <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">브루클린 스트래피 로우 웨지</p>
+                  <p></p>
+                  <h5 class="m-2"><strong>84,900원</strong></h5>
+                </a>
+              </div>
+            </div>
+            </div>
+
+
+            
+
+            <div class="mb-5" id="slide_hidden">
+              <div class="d-flex justify-content-center">
+
+                <div class="m-1">
+                  <a href="#" class="a_link">
+                    <img src="https://image.a-rt.com/art/product/2021/01/75152_1611640004349.jpg?shrink=590:590" class="w-100" alt="...">
+                    <p class="m-2"><strong>나이키</strong></p>
+                    <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">나이키 빅토리 원 슬라이드</p>
+                    <p></p>
+                    <h5 class="m-2"><strong>39,900원</strong></h5>
+                  </a>
+                </div>
+
+                <div class="m-1">
+                  <a href="#" class="a_link">
+                    <img src="https://image.a-rt.com/art/product/2022/03/54949_1648098026445.jpg?shrink=590:590" class="w-100" alt="...">
+                    <p class="m-2"><strong>아디다스</strong></p>
+                    <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">알파바운스 슬라이드 2.0</p>
+                    <p></p>
+                    <h5 class="m-2"><strong>59,000원</strong></h5>
+                  </a>
+                </div>
+
+                <div class="m-1">
+                  <a href="#" class="a_link">
+                    <img src="https://image.a-rt.com/art/product/2023/05/74546_1684370067541.jpg?shrink=590:590" class="w-100" alt="...">
+                    <p class="m-2"><strong>뉴발란스</strong></p>
+                    <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">SD1501BB3</p>
+                    <p></p>
+                    <h5 class="m-2"><strong>59,000원</strong></h5>
+                  </a>
+                </div>
+
+                <div class="m-1">
+                  <a href="#" class="a_link">
+                    <img src="https://image.a-rt.com/art/product/2023/05/91297_1684400833782.jpg?shrink=590:590" class="w-100" alt="...">
+                    <p class="m-2"><strong>뉴발란스</strong></p>
+                    <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">SD1501BK3</p>
+                    <p></p>
+                    <h5 class="m-2"><strong>84,900원</strong></h5>
+                  </a>
+                </div>
+
+                <div class="m-1">
+                  <a href="#" class="a_link">
+                    <img src="https://image.a-rt.com/art/product/2023/05/33652_1684114756815.jpg?shrink=590:590" class="w-100" alt="...">
+                    <p class="m-2"><strong>뉴발란스</strong></p>
+                    <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">SD1501WT3</p>
+                    <p></p>
+                    <h5 class="m-2"><strong>84,900원</strong></h5>
+                  </a>
+                </div>
+              </div>
+              </div>
+
+
+
+
+
+              <div class="mb-5" id="mule_hidden">
+                <div class="d-flex justify-content-center">
+
+                  <div class="m-1">
+                      <a href="#" class="a_link">
+                      <img src="https://image.a-rt.com/art/product/2021/01/73282_1609815404638.jpg?shrink=590:590" class="w-100" alt="...">
+                      <p class="m-2"><strong>나이키</strong></p>
+                      <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">우먼스 나이키 코트 레거시 뮬</p>
+                      <p></p>
+                      <h5 class="m-2"><strong>69,900원</strong></h5>
+                    </a>
+                  </div>
+
+                  <div class="m-1">
+                    <a href="#" class="a_link">
+                      <img src="https://image.a-rt.com/art/product/2022/03/44378_1647482872632.jpg?shrink=590:590" class="w-100" alt="...">
+                      <p class="m-2"><strong>휠라</strong></p>
+                      <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">코트 라이트 뮬</p>
+                      <p></p>
+                      <h5 class="m-2"><strong>55,000원</strong></h5>
+                    </a>
+                  </div>
+
+                  <div class="m-1">
+                    <a href="#" class="a_link">
+                      <img src="https://image.a-rt.com/art/product/2022/03/30617_1647483266237.jpg?shrink=590:590" class="w-100" alt="...">
+                      <p class="m-2"><strong>휠라</strong></p>
+                      <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">코트 라이트 뮬</p>
+                      <p></p>
+                      <h5 class="m-2"><strong>55,000원</strong></h5>
+                    </a>
+                  </div>
+
+                  <div class="m-1">
+                    <a href="#" class="a_link">
+                      <img src="https://image.a-rt.com/art/product/2023/05/91297_1684400833782.jpg?shrink=590:590" class="w-100" alt="...">
+                      <p class="m-2"><strong>휠라</strong></p>
+                      <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">클래식 킥스 B 뮬 v3</p>
+                      <p></p>
+                      <h5 class="m-2"><strong>45,000원</strong></h5>
+                    </a>
+                  </div>
+
+                  <div class="m-1">
+                    <a href="#" class="a_link">
+                      <img src="https://image.a-rt.com/art/product/2023/03/90587_1680223506788.jpg?shrink=590:590" class="w-100" alt="...">
+                      <p class="m-2"><strong>푸마</strong></p>
+                      <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">바리 뮬 벨크로</p>
+                      <p></p>
+                      <h5 class="m-2"><strong>39,000원</strong></h5>
+                    </a>
+                  </div>
+                </div>
+                </div>
+
+
+
+
+
+
+                <div class="mb-5" id="zaxy_hidden">
+                  <div class="d-flex justify-content-center">
+
+                    <div class="m-1">
+                      <a href="#" class="a_link">
+                        <img src="https://image.a-rt.com/art/product/2022/03/25266_1647327215419.jpg?shrink=590:590" class="w-100" alt="...">
+                        <p class="m-2"><strong>작시</strong></p>
+                        <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">펄사 샌들 FEM</p>
+                        <p></p>
+                        <h5 class="m-2"><strong>19,900원</strong></h5>
+                      </a>
+                    </div>
+
+                    <div class="m-1">
+                      <a href="#" class="a_link">
+                        <img src="https://image.a-rt.com/art/product/2022/03/01294_1647327369355.jpg?shrink=590:590" class="w-100" alt="...">
+                        <p class="m-2"><strong>작시</strong></p>
+                        <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">펄사 샌들 FEM</p>
+                        <p></p>
+                        <h5 class="m-2"><strong>19,900원</strong></h5>
+                      </a>
+                    </div>
+
+                    <div class="m-1">
+                      <a href="#" class="a_link">
+                        <img src="https://image.a-rt.com/art/product/2023/03/17763_1679301080037.jpg?shrink=590:590" class="w-100" alt="...">
+                        <p class="m-2"><strong>작시</strong></p>
+                        <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">웨이 파페트 샌드 (FEMALE)</p>
+                        <p></p>
+                        <h5 class="m-2"><strong>55,000원</strong></h5>
+                      </a>
+                    </div>
+
+                    <div class="m-1">
+                      <a href="#" class="a_link">
+                        <img src="https://image.a-rt.com/art/product/2023/04/47933_1682486860944.jpg?shrink=590:590" class="w-100" alt="...">
+                        <p class="m-2"><strong>작시</strong></p>
+                        <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">프리마베라 파페트 AD</p>
+                        <p></p>
+                        <h5 class="m-2"><strong>60,000원</strong></h5>
+                      </a>
+                    </div>
+
+                    <div class="m-1">
+                      <a href="#" class="a_link">
+                        <img src="https://image.a-rt.com/art/product/2023/04/31410_1682488984641.jpg?shrink=590:590" class="w-100" alt="...">
+                        <p class="m-2"><strong>작시</strong></p>
+                        <p class="m-2" style="font-size: 0.8em; color: rgb(91, 90, 90);">프리마베라 파페트 AD</p>
+                        <p></p>
+                        <h5 class="m-2"><strong>60,000원</strong></h5>
+                      </a>
+                    </div>
+                  </div>
+                  </div>
+
+
+            
+
+          </div>  <!-- col-10 -->
+
+
+        <div class="col-2"></div>
+      </div>  <!-- MD’S PICK -->
+
+
+
+
+      <!-- TREND ON -->
+
+      <div class="row mb-3">
+        <div class="col-2"></div>
+          <div class="col-8">
+            <div class="text-center mt-5"><h2><strong>TREND ON</strong></h2></div>
+          </div>
+        <div class="col-2"></div>
+      </div> 
+
+
+      <div class="row mb-4">
+        <div class="col-1"></div>
+
+        <div class="col-10">
+          <div class="">
+            <div class="d-flex justify-content-center">
+              <div class="m-2">
+                <img src="https://image.a-rt.com//art/display/gs/contents/202306/20230613152401566.jpg?shrink=285:356" class="w-100" alt="...">
+                <p class="m-auto mt-2" style="color: rgb(131, 131, 131);"><strong>EDITORIAL</strong></p>
+                <p class="mt-1"><strong>SUMMER<br>DIARY</strong></p>
+              </div>
+              <div class="m-2">
+                <img src="https://image.a-rt.com//art/display/gs/contents/202304/20230425190323393.jpg?shrink=285:356" class="w-100" alt="...">
+                <p class="m-auto mt-2" style="color: rgb(131, 131, 131);"><strong>크록스 워크(WORK)화</strong></p>
+                <p class="mt-1"><strong>CROCS<br>BISTRO COLLECTION</strong></p>
+              </div>
+              <div class="m-2">
+                <img src="https://image.a-rt.com//art/display/gs/contents/202306/20230612152538760.jpg?shrink=285:356" class="w-100" alt="...">
+                <p class="m-auto mt-2" style="color: rgb(131, 131, 131);"><strong>G-log</strong></p>
+                <p class="mt-1"><strong>나의 스타일을 공유하고<br>의견을 나누는 공간, click!</strong></p>
+              </div>
+              <div class="m-2">
+                <img src="https://image.a-rt.com//art/display/gs/contents/202306/20230614153315142.jpg?shrink=285:356" class="w-100" alt="...">
+                <p class="m-auto mt-2" style="color: rgb(131, 131, 131);"><strong>CATALOGUE</strong></p>
+                <p class="mt-1"><strong>젝시믹스 키즈<br>우리 아이를 더욱 응원하는 마음으로</strong></p>
+              </div>
+            </div>
+            </div>
+        </div>  <!-- col-10 -->
+
+        <div class="col-1"></div>
+      </div>
+
+
+
+
+
+
+      
+      <div class="row">
+        <div class="col-2"></div>
+          <div class="col-8">
+            <div class="text-center mt-5"><h2><strong>+ PICK</strong></h2></div>
+
+            <div class="d-flex">
+              <div class="col-2"></div>
+              <div class="col-8">
+                <div class="d-flex justify-content-center mb-2" style="color: grey;">
+                  <h6 class="m-3"><strong>다양한 상품을 한 눈에 모아 볼 수 있는 묶음상품을 만나보세요.</strong></h6>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="d-flex justify-content-end mb-2">
+                  <a href="#" style="color: grey;" class="m-3 link-underline link-underline-opacity-0"><strong>MORE ></strong></a>
+                </div>
+              </div>
+            </div>  <!-- d-flex -->
+          </div>  <!-- col-8 -->
+        <div class="col-2"></div>
+      </div>  <!-- row -->
+      
+
+
+
+
+      <div id="carouselExampleSlidesOnly" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          
+          <div class="carousel-item active" data-bs-interval="5000">
+            <div class="d-flex justify-content-center">
+
+
+              <div class="card m-2 rounded-0" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="https://image.a-rt.com//art/product/package/202306/1685669158699.jpg?shrink=450:450" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card m-2 rounded-0" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="https://image.a-rt.com/art/product/2022/10/38890_1665566447476.jpg?shrink=450:450" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card m-2 rounded-0" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="https://image.a-rt.com//art/product/package/202306/1685667627654.jpg?shrink=450:450" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div> 
+          </div>  <!-- carousel-item active -->
+
+
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="d-flex justify-content-center">
+
+
+              <div class="card m-2 rounded-0" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="https://image.a-rt.com/art/product/2022/08/20423_1660119055515.jpg?shrink=450:450" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card m-2 rounded-0" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="https://image.a-rt.com/art/product/2023/05/52676_1684824060346.jpg?shrink=450:450" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card m-2 rounded-0" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="https://image.a-rt.com/art/product/2022/06/62859_1655196045592.jpg?shrink=450:450" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div> 
+          </div>  <!-- carousel-item -->
+          
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="d-flex justify-content-center">
+
+
+              <div class="card m-2 rounded-0" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="https://image.a-rt.com/art/product/2023/05/86379_1684366853422.jpg?shrink=450:450" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card m-2 rounded-0" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="https://image.a-rt.com/art/product/2023/04/11234_1681181755165.jpg?shrink=450:450" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card m-2 rounded-0" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="https://image.a-rt.com/art/product/2023/02/92996_1675743062828.jpg?shrink=450:450" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div> 
+          </div>  <!-- carousel-item -->
+
+
+
+        </div>
+      </div>
+
+
+      <div class="d-flex mb-4">
+        <div class="col-6">
+          <img src="https://image.a-rt.com//art/display/contents/202306/1686894407909.jpg" class="w-100">
+        </div>
+        <div class="col-6">
+          <img src="https://image.a-rt.com//art/display/contents/202306/1686894437181.jpg" class="w-100">
+        </div>
+      </div>
+
+
+
+
+      
+
+      <div class="p-2 bg-secondary bg-opacity-10 border border-start-0 border-end-0">
+        <div class="d-flex">
+          <div class="col-2"></div>
+          <div class="col-5">
+            <div class="d-flex">
+              <p class="m-1" style="font-size: 0.9em;"><strong>통합고객센터</strong></p>
+              <p class="m-1" style="font-size: 0.9em;">1588-1234</p>
+              <p class="m-1" style="color: rgb(144, 143, 143); font-size: 0.9em;"">월~금 09:00 ~ 12:00 / 13:00 ~ 18:00 (주말,공휴일 휴무)</p>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="m-1">
+              <a href="#" class="link-body-emphasis link-offset-2 link-underline-opacity-0" style="font-size: 0.9em;"><strong>NOTICE</strong></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- footer -->
+
+      <div>
+       <div class="row mb-3">
+        <div class="col-2"></div>
+        <div class="col-5">
+          <img src="https://image.a-rt.com/art/system/site/202207/1658299296317.png" style="width: 18%;" class="mb-3 mt-3">
+          <p style="font-size: 0.7em; color: rgb(105, 105, 105);">
+            (주)에이비씨마트 코리아 대표이사 ｜ 이기호 주소 ｜ 서울특별시 중구 을지로 100, B동 21층 (을지로 2가, 파인에비뉴)<br>
+            사업자등록번호 ｜ 201-81-76174 통신판매업신고 ｜ 제 2015-서울중구-1036호<br>
+            개인정보보호 책임자 ｜ 박영수 이메일 ｜ abcmartcs@abcmartkorea.com
+          </p>
+          <p style="font-size: 0.7em;">
+            <a href="#" class="link-secondary link-offset-2 link-underline-opacity-0">사업자정보확인</a> ｜ 
+            <a href="#" class="link-secondary link-offset-2 link-underline-opacity-0">개인정보처리방침</a> ｜ 
+            <a href="#" class="link-secondary link-offset-2 link-underline-opacity-0">이용약관</a> ｜ 
+            <a href="#" class="link-secondary link-offset-2 link-underline-opacity-0">멤버십 이용약관</a>
+          </p>
+        </div>
+        <div class="col-1 mt-4">
+          <p style="font-size: 0.9em; color: rgb(36, 36, 36);"><strong>HELP</strong></p>
+          <p style="font-size: 0.9em; color: rgb(105, 105, 105);">
+            <a href="#" class="link-secondary link-offset-2 link-underline-opacity-0">고객센터</a><br>
+            <a href="#" class="link-secondary link-offset-2 link-underline-opacity-0">매장찾기</a><br>
+            <a href="#" class="link-secondary link-offset-2 link-underline-opacity-0">입점/제휴문의</a>
+          </p>
+        </div>
+
+        <div class="col-1 mt-4">
+          <p style="font-size: 0.9em; color: rgb(36, 36, 36);"><strong>BRAND</strong></p>
+          <p style="font-size: 0.9em; color: rgb(105, 105, 105);">
+            <a href="#" class="link-secondary link-offset-2 link-underline-opacity-0">HAWKINS</a><br>
+            <a href="#" class="link-secondary link-offset-2 link-underline-opacity-0">SPERRY</a><br>
+            <a href="#" class="link-secondary link-offset-2 link-underline-opacity-0">DANNER</a>
+          </p>
+        </div>
+
+        
+        
+       </div>
+      </div>  <!-- footer -->
+
+  </div>  <!-- main -->
+  
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+
+    $(function(){
+      
+      document.getElementById('slide_hidden').style.display = 'none';
+      document.getElementById('mule_hidden').style.display = 'none';
+      document.getElementById('zaxy_hidden').style.display = 'none';
+
+      document.getElementById('crocsBtn').style.color = "red";
+
+      $('#crocsBtn').on("click",function(){
+
+        $('#crocs_hidden').show();
+        $('#slide_hidden').hide();
+        $('#mule_hidden').hide();
+        $('#zaxy_hidden').hide();
+
+
+        document.getElementById('crocsBtn').style.color = "red";
+        document.getElementById('slideBtn').style.color = "grey";
+        document.getElementById('muleBtn').style.color = "grey";
+        document.getElementById('zaxyBtn').style.color = "grey";
+      })
+
+
+      $('#slideBtn').on("click",function(){
+        $('#crocs_hidden').hide();
+        $('#mule_hidden').hide();
+        $('#zaxy_hidden').hide();
+        
+        document.getElementById('slide_hidden').style.display = 'block';
+        
+        
+        document.getElementById('slideBtn').style.color = "red";
+        document.getElementById('crocsBtn').style.color = "grey";
+        document.getElementById('muleBtn').style.color = "grey";
+        document.getElementById('zaxyBtn').style.color = "grey";
+      })
+
+
+      $('#muleBtn').on("click",function(){
+        $('#crocs_hidden').hide();
+        $('#slide_hidden').hide();
+        $('#zaxy_hidden').hide();
+        
+        document.getElementById('mule_hidden').style.display = 'block';
+
+        document.getElementById('muleBtn').style.color = "red";
+        document.getElementById('slideBtn').style.color = "grey";
+        document.getElementById('crocsBtn').style.color = "grey";
+        document.getElementById('zaxyBtn').style.color = "grey";
+        
+      })
+
+
+      $('#zaxyBtn').on("click",function(){
+        $('#crocs_hidden').hide();
+        $('#slide_hidden').hide();
+        $('#mule_hidden').hide();
+        
+        document.getElementById('zaxy_hidden').style.display = 'block';
+
+        document.getElementById('zaxyBtn').style.color = "red";
+        document.getElementById('slideBtn').style.color = "grey";
+        document.getElementById('crocsBtn').style.color = "grey";
+        document.getElementById('muleBtn').style.color = "grey";
+        
+      })
+
+      
+    })
+
+
+
+
+
+  </script>
+
+</body>
+</html>
